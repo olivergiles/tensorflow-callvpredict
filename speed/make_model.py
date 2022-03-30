@@ -18,8 +18,8 @@ def create_model():
 def main():
     model = create_model()
 
-    EPOCHS = 50
-    X, y = make_moons(n_samples=5000, noise=0.3, random_state=42)
+    EPOCHS = 1
+    X, y = make_moons(n_samples=5_000_000, noise=0.4, random_state=42)
     X_train, X_test, y_train, y_test = train_test_split(X, y,
                                                 test_size=0.3, random_state=42)
     model = create_model()
