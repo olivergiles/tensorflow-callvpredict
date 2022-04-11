@@ -28,7 +28,7 @@ def main():
             model.__call__(X[i].reshape(-1,2))
         end = time.time()
         times.append(end-start)
-    print(f"""using predict a loop of {SIZE} predictions over {RUNS} runs
+    print(f"""using call a loop of {SIZE} predictions over {RUNS} runs
           took {sum(times)}""")
 
 if __name__ == "__main__":
